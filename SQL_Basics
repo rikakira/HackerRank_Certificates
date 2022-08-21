@@ -1,0 +1,9 @@
+/*
+Enter your query below.
+Please append a semicolon ";" at the end of the query
+*/
+
+SELECT ei.employee_ID, ei.name FROM employee_information ei
+join last_quarter_bonus b ON b.employee_ID = ei.employee_ID
+WHERE ei.division LIKE 'HR'
+AND b.bonus>=5000;
